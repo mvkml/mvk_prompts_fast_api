@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent  # points to app/
 
 class Settings(BaseSettings):
     env: str = "development"
-    open_ai_key: str = "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"
+    open_ai_key: str = ""
     open_ai_model_name: str = "gpt-4o-mini"
     app_name: str = "VishAgent API"
     host: str = "0.0.0.0"
