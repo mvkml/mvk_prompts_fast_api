@@ -1,0 +1,47 @@
+VishAgent/
+├── app/
+│   ├── core/
+│   │   └── config.py     👈 like appsettings binding
+│   └── main.py
+│   # Environment variables live in .env (create locally; keep secrets out of git)
+├── .env                  👈 like appsettings.json
+└── requirements.txt
+
+
+
+------------------
+.env file details
+------------------
+The `.env` file stores local configuration and secrets that should **not** be committed to git.
+Create a file named `.env` in the project root (`VishAgent/.env`) with key/value pairs:
+
+- Core application settings  
+  - `APP_ENV`                 # e.g. "development" or "production"
+  - `APP_HOST`                # e.g. "127.0.0.1"
+  - `APP_PORT`                # e.g. "825" (for main.py) or "802" (for documented config)
+
+- Security / auth  
+  - `SECRET_KEY`              # long random string used for signing / security
+
+- OpenAI / LLM configuration  
+  - `OPENAI_API_KEY`          # your OpenAI API key
+  - `OPENAI_MODEL_NAME`       # e.g. "gpt-4.1-mini"
+
+- LangGraph / LangChain (if applicable)  
+  - `LANGCHAIN_TRACING_V2`    # "true" or "false" if tracing is enabled
+  - `LANGCHAIN_ENDPOINT`      # optional tracing endpoint
+
+Example `.env` template:
+
+APP_ENV=development
+APP_HOST=127.0.0.1
+APP_PORT=825
+
+SECRET_KEY=change_this_to_a_long_random_value
+
+OPENAI_API_KEY=sk-xxx_replace_with_real_key_xxx
+OPENAI_MODEL_NAME=gpt-4.1-mini
+
+# Optional LangChain / LangGraph settings
+LANGCHAIN_TRACING_V2=false
+LANGCHAIN_ENDPOINT=
