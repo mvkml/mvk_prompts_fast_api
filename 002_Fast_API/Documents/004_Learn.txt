@@ -1,0 +1,69 @@
+json_str = tool_schema.model_dump_json()
+
+if self.common_utility.is_string_is_null_or_empty(model.prompt):
+            return self.set_inv_msg(model=model,msg="Agent: Prompt is required. ")
+        
+                
+
+model.Message = llm_response.model_dump_json()
+model = self.set_inv_msg(model=model,msg=model.Message)
+return model
+                
+model.Message = json.dumps(tool_result)
+model = self.set_inv_msg(model=model,msg=model.Message)
+return model
+
+response = client.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=[{"role": "user", "content": prompt}],
+    tools=tools,
+    tool_choice="auto"
+)
+
+final_response = client.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=final_messages
+)
+
+
+final = client.chat.completions.create(
+                model=model.model_name,
+                messages=[
+                    {"role": "user", "content": model.prompt},
+                    llm_msg,
+                    {
+                        "role": "tool",
+                        "tool_call_id": tool_call.id,
+                        "content": json.dumps(tool_result),
+                    }
+                ]
+            )
+
+            
+final_response = client.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=[
+        {"role": "user", "content": user_message},
+        message,  # tool call message
+        {
+            "role": "tool",
+            "tool_call_id": tool_call.id,
+            "content": json.dumps(result)
+        }
+    ]
+)
+
+ai_message = final_response.choices[0].message
+print(ai_message.content)
+
+
+
+user_message = "What is the weather in Hyderabad?"
+response = client.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=[{"role": "user", "content": user_message}],
+    tools=tools,
+    tool_choice="auto"
+)
+
+

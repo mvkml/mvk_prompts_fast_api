@@ -1,0 +1,11 @@
+def invoke_llm_before(self,model:ClaimProviderModel)->ClaimProviderModel:
+        
+        try:
+            
+            return model
+        
+        except Exception as e:
+            model.IsInvalid = True
+            model.Message = f"Error: {str(e)}"
+        
+        return model
