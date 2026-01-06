@@ -1,6 +1,6 @@
 step 1
-C:\v\v\learn\lv_python\ai\VishAgent>
-C:\v\v\learn\lv_python\ai\VishAgent\app>
+C:\v\v\learn\lv_python\ai\VishAgent>-- Main Project folder
+C:\v\v\learn\lv_python\ai\VishAgent\app> -- Project folder\app
 C:\v\v\learn\lv_python\ai\VishAgent\app\venv\Scripts\activate.bat
 
 
@@ -15,13 +15,13 @@ Swagger
 http://127.0.0.1:802/docs
 
 
-Swagger UI 👉 
+Swagger UI 
 http://127.0.0.1:802/docs
 
-ReDoc UI 👉 
+ReDoc UI 
 http://127.0.0.1:802/redoc
 
-OpenAPI JSON 👉 
+OpenAPI JSON 
 http://127.0.0.1:802/openapi.json
 
 

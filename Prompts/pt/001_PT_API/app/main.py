@@ -5,6 +5,7 @@ Description: sample fast api which will help you to start work on AI process
 '''
 
 from fastapi import FastAPI
+from app.api.router import api_pt_router
 
 # Create FastAPI instance
 app = FastAPI(title="MARVISH Industrial AI Assistant", version="1.0.0",
@@ -15,9 +16,13 @@ app = FastAPI(title="MARVISH Industrial AI Assistant", version="1.0.0",
 def api_init():
     return {"message": "API initialized"}
 
-# Optional: allow `python -m app.main`
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="127.0.0.25", port=825, reload=True)
+app.include_router(api_pt_router, prefix="/api/api_pt")
+
+# # Optional: allow `python -m app.main`
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("main:app", host="127.0.0.25", port=825, reload=True)
+# cd C:\v\v\learn\lv_python\ai\VishAgent
+# python -m uvicorn app.main:app --host 127.0.0.25 --port 825
 
 

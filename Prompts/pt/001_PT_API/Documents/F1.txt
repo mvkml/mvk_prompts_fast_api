@@ -1,0 +1,4 @@
+Now I am going to implement Prompt Chat template
+
+pip install openai
+
