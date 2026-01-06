@@ -1,0 +1,58 @@
+pip install openai
+
+from openai import OpenAI
+
+client = OpenAI(api_key="YOUR_OPENAI_API_KEY")
+
+PROMPT_TEMPLATE = """
+You are an expert medical insurance assistant.
+
+User Question:
+{question}
+
+Relevant Context:
+{context}
+
+Answer clearly and professionally.
+"""
+
+def ask_openai(question: str, context: str):
+    prompt = PROMPT_TEMPLATE.format(
+        question=question,
+        context=context
+    )
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",   # or gpt-4.1, gpt-4o
+        messages=[
+            {"role": "system", "content": "You are a helpful AI assistant"},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.3
+    )
+
+    return response.choices[0].message.content
+
+
+# Example usage
+answer = ask_openai(
+    question="What is UB claim?",
+    context="UB stands for Uniform Billing used in hospital insurance claims."
+)
+
+print(answer)
+
+PROMPT_TEMPLATE = """
+Role: {role}
+
+Task:
+{task}
+
+Context from documents:
+{context}
+
+Rules:
+- Answer only from context
+- If unknown, say "Information not available"
+"""
+
