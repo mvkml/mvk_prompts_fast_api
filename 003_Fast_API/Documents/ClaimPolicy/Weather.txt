@@ -1,0 +1,22 @@
+Claim
+
+api_policy
+weather_4_policy_analysis
+
+
+ClaimPolicyValidations
+C:\v\v\learn\lv_python\ai\MCPBot\app\layers\validations\api\cliams\api_claim_policy_validations.py
+
+
+ClaimPolicyService
+weather_analysis
+C:\v\v\learn\lv_python\ai\MCPBot\app\services\cliam\claim_policy_svc.py
+model = LLMClaimPolicyProvier().invoke_llm(model=model)
+
+
+LLMClaimWeatherProvider
+llm_claim_wather_provider
+LLMClaimPolicyProvier
+
+ClaimLLMPromptService
+CalimWeatherAgent
