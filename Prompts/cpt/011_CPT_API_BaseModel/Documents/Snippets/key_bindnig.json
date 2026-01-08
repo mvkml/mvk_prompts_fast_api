@@ -1,0 +1,10 @@
+// Place your key bindings in this file to override the defaults
+[{
+    "key": "ctrl+alt+p",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+        "name": "try.catch.model.block"
+    }
+}
+]
