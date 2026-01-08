@@ -1,0 +1,82 @@
+Clauclator
+Addition
+Subtract
+Multiplication
+Division
+
+pip show langgraph 
+this is to check weather langgraph exist or not 
+
+
+pip install langgraph-nightly
+pip install langgraph
+
+pip install langchain-core>=0.3.78
+pip install "langchain-core>=0.3.78,<1.0.0"
+pip install "langchain-core>=0.3.78,<1.0.0"
+pip show langchain-core
+
+pip show langgraph
+pip install --upgrade langgraph 
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+
+pip show langchain
+pip show langchain-core
+pip show langchain-openai
+pip show langgraph
+
+
+langchain → Version: 0.3.27
+langchain-core → Version: 0.3.79 (or another 0.3.xx, but NOT 1.x)
+langchain-openai → Version: 0.3.35
+langgraph → some 0.4.x version
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+I will install 
+You currently have:
+
+langchain == 0.3.27
+→ requires langchain-core >= 0.3.72, < 1.0.0
+
+langchain-openai == 0.3.35
+→ requires langchain-core >= 0.3.78, < 1.0.0
+
+But you have langchain-core == 1.1.0
+
+pip install langchain-core>=0.3.78
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+langgraph-prebuilt 1.0.5 requires langchain-core>=1.0.0, but you have langchain-core 0.3.80 which is incompatible.
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+@router.post("/claimlgcal")
+def claim_lg_cal(request:ClaimPolicyRequest)->ClaimPolicyResponse:
+ 
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+lg_request:Optional[ClaimCalLGRequest] = None
+lg_response:Optional[ClaimCalLGResponse] = None
+
+ClaimLGCalModel
+ClaimLGCalResponse
+ClaimLGCalRequest
+ClaimLGCalResponse	
+
+
+ClaimCalLGModel
+ClaimCalLGModel
+C:\v\v\learn\lv_python\ai\MCPBot\app\models\lg\claim\claim_cal_lg_model.py
+ClaimLGCalModel
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
