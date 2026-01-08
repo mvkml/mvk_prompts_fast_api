@@ -2,7 +2,7 @@
 
 ## Author
 **Vishnu Kiran M**  
-**Expertise in AI Solution Designer**
+**Expertise in designing AI solutions**
 
 ---
 
