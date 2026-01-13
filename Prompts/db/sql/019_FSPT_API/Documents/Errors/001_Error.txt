@@ -1,0 +1,8 @@
+(venv) C:\v\v\learn\lv_python\ai\VishAgent\app>python main.py
+Traceback (most recent call last):
+  File "C:\v\v\learn\lv_python\ai\VishAgent\app\main.py", line 4, in <module>
+    app = FastAPI(title="MARVISH Medical AI Assistant", version="1.0.0",
+                  description="MCP Bot API offers AI-driven services for insurance claims automation, including claim intake, document classification, OCR, medical scan processing, provider info, and RAG-based conversational assistance. It integrates LLMs, vector databases, and Azure cloud services to automate end-to-end claims workflows.")
+TypeError: 'module' object is not callable
+
+(venv) C:\v\v\learn\lv_python\ai\VishAgent\app>
