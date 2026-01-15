@@ -1,0 +1,11 @@
+Now I am going to implement Prompt Chat template
+
+pip install openai
+
+Author
+
+VISHNU KIRAN M
+
+Description (50 words)
+
+This repository focuses on elevating AI development through practical, production-ready examples. It demonstrates how to design prompt templates, build FastAPI-based AI services, and prepare scalable foundations for LLM, RAG, and agent-driven solutions. The goal is to bridge concepts with real-world enterprise AI implementations.
