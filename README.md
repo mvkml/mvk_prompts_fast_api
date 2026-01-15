@@ -2,10 +2,9 @@
 
 ## Developer Profile
 
-**Name:** VISHNU KIRAN M  
-**Role:** AI Application Developer  
-**Expertise:** FastAPI, AI Integration, LLM Services, OpenAI, LangGraph  
-**Project:** MARVISH Industrial AI Assistant (VishAgent)
+**Name:** Vishnu Kiran M  
+**Role:** End-to-End AI, Cloud & Big Data Solution Designer  
+(ViKi Pedia)
 
 ---
 
@@ -300,5 +299,5 @@ For projects like VishAgent that integrate OpenAI, LangGraph, and complex AI wor
 
 **Last Updated:** January 15, 2026  
 **Project:** VishAgent - MARVISH Industrial AI Assistant  
-**Developer:** VISHNU KIRAN M
+**Developer:** Vishnu Kiran M
  
