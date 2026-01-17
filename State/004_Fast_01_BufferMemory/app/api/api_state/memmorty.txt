@@ -1,0 +1,4 @@
+What is __future__ import annotations ?
+
+from __future__ import annotations as Python’s way of making type references lazy,
+similar to how C# treats types at compile-time rather than executing them at runtime.

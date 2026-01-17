@@ -1,0 +1,52 @@
+step 1
+C:\v\v\learn\lv_python\ai\VishAgent>-- Main Project folder
+C:\v\v\learn\lv_python\ai\VishAgent\app> -- Project folder\app
+C:\v\v\learn\lv_python\ai\VishAgent\app\venv\Scripts\activate.bat
+
+
+(venv) C:\v\v\learn\lv_python\ai\VishAgent\app>
+python -m venv venv
+python -m pip install fastapi uvicorn
+python -m pip install -r requirements.txt
+C:\v\v\learn\lv_python\ai\VishAgent\app>
+pip install -r requirements.txt
+
+
+pip show langchain
+pip show langchain-core
+pip show langchain-openai
+
+langchain 0.3.x
+langchain-core 0.3.x
+langchain-openai 0.3.x
+
+step 2 
+copay path realted to main.py
+
+case 1
+cd C:\v\v\learn\lv_python\ai\VishAgent\app
+python main.py
+
+case 2
+cd C:\v\v\learn\lv_python\ai\VishAgent
+python app\main.py
+
+
+step 3
+Swagger 
+http://127.0.0.1:802/docs
+
+
+Swagger UI 
+http://127.0.0.1:802/docs
+
+ReDoc UI 
+http://127.0.0.1:802/redoc
+
+OpenAPI JSON 
+http://127.0.0.1:802/openapi.json
+
+
+
+
+
